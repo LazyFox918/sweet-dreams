@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сладкие Сны - Кондитерская</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-pink-50">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-pink-600">Сладкие Сны</h1>
+                <div class="space-x-6">
+                    <a href="#main" class="text-gray-600 hover:text-pink-600">Главная</a>
+                    <a href="#products" class="text-gray-600 hover:text-pink-600">Товары</a>
+                    <a href="#about" class="text-gray-600 hover:text-pink-600">О нас</a>
+                    <a href="#cart" class="text-gray-600 hover:text-pink-600">Корзина</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-pink-100 py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Ручная работа с любовью</h2>
+                <p class="text-xl text-gray-600">Натуральные ингредиенты, уникальные рецепты и внимание к каждой детали</p>
+            </div>
+        </section>
+
+        <section id="products" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Наши сладости</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Карточки товаров будут добавлены динамически -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">О нас</h2>
+                <div class="max-w-2xl mx-auto text-center">
+                    <p class="text-gray-600 mb-4">
+                        Каждое изделие создается вручную с особой любовью и вниманием к деталям. 
+                        Мы используем только натуральные ингредиенты высшего качества, чтобы 
+                        создавать не только вкусные, но и полезные сладости.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Корзина</h2>
+                <div class="max-w-2xl mx-auto">
+                    <!-- Корзина будет добавлена динамически -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-pink-50 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Связаться с нами</h2>
+                <div class="max-w-2xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Контакты</h3>
+                                <p class="text-gray-600 mb-2">Телефон: <a href="tel:+7XXXXXXXXXX" class="text-pink-600">+7 (XXX) XXX-XX-XX</a></p>
+                                <p class="text-gray-600 mb-2">Email: <a href="mailto:info@sweet-dreams.ru" class="text-pink-600">info@sweet-dreams.ru</a></p>
+                                <p class="text-gray-600">Адрес: г. Москва, ул. Примерная, д. 123</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Время работы</h3>
+                                <p class="text-gray-600 mb-2">Пн-Пт: 9:00 - 20:00</p>
+                                <p class="text-gray-600 mb-2">Сб: 10:00 - 18:00</p>
+                                <p class="text-gray-600">Вс: выходной</p>
+                            </div>
+                        </div>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Ваше имя</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Телефон</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Сообщение</label>
+                                <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Сладкие Сны. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
